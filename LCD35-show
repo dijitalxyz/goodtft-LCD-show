@@ -8,7 +8,7 @@ fi
 if [ ! -d /etc/X11/xorg.conf.d ]; then
 sudo mkdir -p /etc/X11/xorg.conf.d
 fi
-sudo cp ./usr/tft35a-overlay.dtb /boot/overlays/
+sudo cp ./usr/tft35a-overlay.dtb /boot/overlays/tft35a-overlay.dtbo
 sudo cp ./usr/tft35a-overlay.dtb /boot/overlays/tft35a.dtbo
 #root_dev=`grep -oPr "root=[^\s]*" /boot/cmdline.txt | awk -F= '{printf $NF}'`
 #if test "$root_dev" = "/dev/mmcblk0p7";then
